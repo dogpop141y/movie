@@ -7,6 +7,7 @@ import TheaterInfomation from "./TheaterInfomation/TheaterInfomation";
 import PaymentLayout from "./Payment/PaymentLayout";
 import BookingLayout from "./Booking/BookingLayout";
 import { ColorModeProvider } from "@chakra-ui/react";
+import SeatLayout from "./seat/SeatLayout";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/theaters" element={<TheaterInfomation />} />
           <Route path="/booking/:id/payment" element={<PaymentLayout />} />
           <Route path="/booking/:id" element={<BookingLayout />} />
+          <Route path="/booking/:id/Seat" element={<SeatLayout />} />
         </Routes>
         <Footer />
       </ColorModeProvider>
